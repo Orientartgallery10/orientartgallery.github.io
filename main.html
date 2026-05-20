@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Orient Art Gallery — Handcrafted Islamic calligraphy, custom framing, professional installation and interior consultation. Nationwide shipping.">
+  <meta name="keywords" content="Islamic calligraphy, Arabic calligraphy, custom framing, Islamic art, Quran calligraphy, Islamic home decor, masjid art, halal">
+  <meta property="og:title" content="Orient Art Gallery — Picture Framers And Art Presentation">
+  <meta property="og:description" content="Handcrafted Islamic calligraphy for homes, masjids, and businesses. Custom framing, professional installation, and interior consultation.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#080807">
+  <title>Orient Art Gallery — Picture Framers And Art Presentation</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Playfair+Display:ital,wght@0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Amiri:ital,wght@0,400;0,700;1,400&family=Noto+Naskh+Arabic:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       LOADER
+       ============================================================ -->
+  <div id="loader" role="status" aria-label="Loading Orient Art Gallery">
+    <div class="loader-geo" aria-hidden="true"></div>
+    <div class="loader-arabic" aria-label="Bismillah Al-Rahman Al-Raheem">بِسْمِ اللَّهِ الرَّحْمٰنِ الرَّحِيمِ</div>
+    <div class="loader-wordmark">ORIENT ART GALLERY</div>
+    <div class="loader-line" aria-hidden="true"><div class="loader-fill"></div></div>
+  </div>
+
+  <!-- ============================================================
+       CUSTOM CURSOR (desktop only)
+       ============================================================ -->
+  <div id="cursor-dot" aria-hidden="true"></div>
+  <div id="cursor-ring" aria-hidden="true"></div>
+
+  <!-- ============================================================
+       SCROLL PROGRESS BAR
+       ============================================================ -->
+  <div id="scroll-bar" role="progressbar" aria-label="Page scroll progress" aria-valuemin="0" aria-valuemax="100"></div>
+
+  <!-- ============================================================
+       MOBILE OVERLAY
+       ============================================================ -->
+  <div id="mob-overlay" aria-hidden="true"></div>
+
+  <!-- ============================================================
+       NAVBAR
+       ============================================================ -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <a href="#hero" class="nav-logo" aria-label="Orient Art Gallery — Return to top">
+        <img src="logo.png" alt="Orient Art Logo" class="nav-logo-img"> 
+  
+      <div class="nav-logo-text">
+        <span class="nav-logo-main">ORIENT ART GALLERY</span>
+        <span class="nav-logo-arabic" lang="ar" dir="rtl">الفن الشرقي</span>
+      </div>
+    </a>
+
+    <ul class="nav-links" role="list">
+      <li><a href="#collections">Collections</a></li>
+      <li><a href="#framing">Framing</a></li>
+      <li><a href="#installation">Installation</a></li>
+      <li><a href="#who-we-are">About</a></li>
+      <li><a href="#consultation">Consult</a></li>
+    </ul>
+
+    <a href="#contact" class="nav-cta" aria-label="Request a quote">
+      <span>REQUEST A QUOTE</span>
+    </a>
+
+    <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ============================================================
+       MOBILE NAV
+       ============================================================ -->
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" aria-hidden="true">
+    <a href="#collections">Collections</a>
+    <a href="#framing">Framing</a>
+    <a href="#installation">Installation</a>
+    <a href="#who-we-are">About</a>
+    <a href="#consultation">Consult</a>
+    <a href="#contact" class="nav-cta" style="margin-top:1.2rem;display:inline-block"><span>REQUEST A QUOTE</span></a>
+  </nav>
+
+  <!-- ============================================================
+       MAIN CONTENT
+       ============================================================ -->
+  <main id="main-content">
+
+    <!-- ===========================================================
+         1. HERO SECTION
+         =========================================================== -->
+    <section id="hero" aria-label="Welcome to Orient Art Gallery">
+
+      <!-- Background layers -->
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-grain" aria-hidden="true"></div>
+      <div class="hero-geo" aria-hidden="true"></div>
+      <div class="orb orb-a" aria-hidden="true"></div>
+      <div class="orb orb-b" aria-hidden="true"></div>
+
+      <!-- Decorative 8-pointed star -->
+      <svg class="hero-star" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M50 5 L57 35 L87 28 L70 50 L87 72 L57 65 L50 95 L43 65 L13 72 L30 50 L13 28 L43 35 Z" stroke="#b8902a" stroke-width="0.6" fill="rgba(184,144,42,0.06)"/>
+        <circle cx="50" cy="50" r="20" stroke="#b8902a" stroke-width="0.4" fill="none" stroke-dasharray="3 4" opacity="0.5"/>
+      </svg>
+
+      <!-- Canvas for animated Islamic geometric overlay -->
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+      <!-- Hero content -->
+      <div class="hero-content">
+        <div class="hero-eyebrow">
+          <span class="eyebrow-dot" aria-hidden="true"></span>
+          HANDCRAFTED ISLAMIC CALLIGRAPHY
+          <span class="eyebrow-dot" aria-hidden="true"></span>
+        </div>
+
+        <h1 class="hero-h1">
+          <span class="line">Sacred Script,</span>
+          <span class="line"><em class="gold-text">Timeless Beauty</em></span>
+        </h1>
+
+        <p class="hero-arabic" lang="ar" dir="rtl" aria-label="Verily, in the remembrance of Allah do hearts find rest">
+          أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ
+        </p>
+
+        <p class="hero-sub">
+          Handcrafted Islamic calligraphy, bespoke framing, and professional installation — bringing the eloquence of sacred Arabic script into your home, masjid, and workspace.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#contact" class="btn-primary">
+            <span>REQUEST A QUOTE</span>
+          </a>
+          <a href="#collections" class="btn-outline">
+            <span>VIEW COLLECTION</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Scroll cue -->
+      <div class="scroll-cue" aria-hidden="true">
+        <span>SCROLL</span>
+        <div class="scroll-cue-line"></div>
+      </div>
+    </section>
+
+    <!-- ===========================================================
+         2. MARQUEE
+         =========================================================== -->
+    <div id="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-item"><span>HANDCRAFTED CALLIGRAPHY</span><span class="marquee-dot">◆</span></div>
+        <div class="marquee-item"><span class="marquee-arabic" lang="ar">الخط العربي الأصيل</span><span class="marquee-dot">◆</span></div>
+        <div class="marquee-item"><span>CUSTOM FRAMING</span><span class="marquee-dot">◆</span></div>
+        <div class="marquee-item"><span>NATIONWIDE SHIPPING</span><span class="marquee-dot">◆</span></div>
+        <div class="marquee-item"><span class="marquee-arabic" lang="ar">خط ثُلث · نَسخ · ديواني</span><span class="marquee-dot">◆</span></div>
+        <div class="marquee-item"><span>PROFESSIONAL INSTALLATION</span><span class="marquee-dot">◆</span></div>
+        <div class="marquee-item"><span>INTERIOR CONSULTATION</span><span class="marquee-dot">◆</span></div>
+        <div class="marquee-item"><span class="marquee-arabic" lang="ar">الفن الإسلامي</span><span class="marquee-dot">◆</span></div>
+        <!-- Duplicate for seamless loop -->
+        <div class="marquee-item"><span>HANDCRAFTED CALLIGRAPHY</span><span class="marquee-dot">◆</span></div>
+        <div class="marquee-item"><span class="marquee-arabic" lang="ar">الخط العربي الأصيل</span><span class="marquee-dot">◆</span></div>
+        <div class="marquee-item"><span>CUSTOM FRAMING</span><span class="marquee-dot">◆</span></div>
+        <div class="marquee-item"><span>NATIONWIDE SHIPPING</span><span class="marquee-dot">◆</span></div>
+        <div class="marquee-item"><span class="marquee-arabic" lang="ar">خط ثُلث · نَسخ · ديواني</span><span class="marquee-dot">◆</span></div>
+        <div class="marquee-item"><span>PROFESSIONAL INSTALLATION</span><span class="marquee-dot">◆</span></div>
+        <div class="marquee-item"><span>INTERIOR CONSULTATION</span><span class="marquee-dot">◆</span></div>
+        <div class="marquee-item"><span class="marquee-arabic" lang="ar">الفن الإسلامي</span><span class="marquee-dot">◆</span></div>
+      </div>
+    </div>
+
+    <!-- ===========================================================
+         3. COLLECTIONS SECTION
+         =========================================================== -->
+    <section id="collections" aria-labelledby="collections-title">
+
+      <div class="collections-intro reveal">
+        <span class="sec-tag">The Collection</span>
+        <h2 class="sec-title" id="collections-title">
+          Sacred Scripts,<br><span class="g">Masterfully Rendered</span>
+        </h2>
+        <p>
+          Each work is individually crafted by our master calligraphers, drawing from centuries of Arabic script tradition — from flowing Thuluth to precise Naskh and the ornate elegance of Diwani. Every piece is a singular original.
+        </p>
+      </div>
+
+      <div class="collections-grid">
+
+        <!-- Featured piece -->
+        <article class="col-card col-span-2 large reveal d1" aria-label="Featured collection piece: Ayat ul Kursi">
+          <div class="col-art">
+            <!-- IMAGE: Replace .col-art-inner with <img src="images/ayat-ul-kursi.jpg" alt="Ayat ul Kursi in Thuluth script"> -->
+            <div class="col-art-inner" role="img" aria-label="Ayat ul Kursi calligraphy in Thuluth script — image placeholder">
+              <svg viewBox="0 0 140 120" fill="none" xmlns="http://www.w3.org/2000/svg" width="80%" opacity="0.75">
+                <circle cx="70" cy="60" r="50" stroke="#b8902a" stroke-width="0.4" stroke-dasharray="5 4"/>
+                <circle cx="70" cy="60" r="35" stroke="#b8902a" stroke-width="0.3"/>
+                <text x="70" y="55" text-anchor="middle" font-family="Amiri,serif" font-size="22" fill="#d4aa45">اللهُ</text>
+                <text x="70" y="74" text-anchor="middle" font-family="Amiri,serif" font-size="11" fill="#c4b89a" opacity="0.8">لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ</text>
+              </svg>
+            </div>
+          </div>
+          <div class="col-overlay"></div>
+          <div class="col-info">
+            <span class="col-tag">FEATURED PIECE</span>
+            <h3 class="col-title">Ayat ul Kursi</h3>
+            <p class="col-arabic" lang="ar" dir="rtl">آيَةُ الْكُرْسِيّ · الخط الثُلث</p>
+            <a href="#contact" class="col-btn">INQUIRE NOW</a>
+          </div>
+        </article>
+
+        <!-- The 99 Names -->
+        <article class="col-card reveal d2" aria-label="The 99 Names of Allah">
+          <div class="col-art">
+            <!-- IMAGE: Replace with <img src="images/99-names.jpg" alt="99 Names of Allah in Kufic script"> -->
+            <div class="col-art-inner" role="img" aria-label="The 99 Names of Allah — image placeholder">
+              <svg viewBox="0 0 100 100" fill="none" width="65%" opacity="0.7">
+                <rect x="15" y="15" width="70" height="70" stroke="#b8902a" stroke-width="0.5"/>
+                <rect x="22" y="22" width="56" height="56" stroke="#b8902a" stroke-width="0.3" transform="rotate(45 50 50)"/>
+                <text x="50" y="55" text-anchor="middle" font-family="Amiri,serif" font-size="18" fill="#d4aa45">الله</text>
+              </svg>
+            </div>
+          </div>
+          <div class="col-overlay"></div>
+          <div class="col-info">
+            <span class="col-tag">COLLECTION</span>
+            <h3 class="col-title">The 99 Names</h3>
+            <p class="col-arabic" lang="ar" dir="rtl">أَسْمَاءُ اللَّهِ الْحُسْنَى</p>
+            <a href="#contact" class="col-btn">INQUIRE NOW</a>
+          </div>
+        </article>
+
+        <!-- Noor — Light -->
+        <article class="col-card reveal d3" aria-label="Noor — Light, prophetic calligraphy">
+          <div class="col-art">
+            <!-- IMAGE: Replace with <img src="images/noor.jpg" alt="Noor calligraphy in Naskh script"> -->
+            <div class="col-art-inner" role="img" aria-label="Noor calligraphy — image placeholder">
+              <svg viewBox="0 0 100 100" fill="none" width="65%" opacity="0.7">
+                <polygon points="50,8 60,40 92,40 67,58 77,90 50,72 23,90 33,58 8,40 40,40" stroke="#b8902a" stroke-width="0.5" fill="none"/>
+                <text x="50" y="55" text-anchor="middle" font-family="Amiri,serif" font-size="14" fill="#d4aa45">نور</text>
+              </svg>
+            </div>
+          </div>
+          <div class="col-overlay"></div>
+          <div class="col-info">
+            <span class="col-tag">PROPHETIC SCRIPT</span>
+            <h3 class="col-title">Noor — Light</h3>
+            <p class="col-arabic" lang="ar" dir="rtl">اللَّهُ نُورُ السَّمَاوَاتِ وَالْأَرْضِ</p>
+            <a href="#contact" class="col-btn">INQUIRE NOW</a>
+          </div>
+        </article>
+
+        <!-- Custom Commissions -->
+        <article class="col-card col-span-2 large reveal d4" aria-label="Custom commission calligraphy">
+          <div class="col-art">
+            <!-- IMAGE: Replace with <img src="images/custom.jpg" alt="Custom Islamic calligraphy commission"> -->
+            <div class="col-art-inner" role="img" aria-label="Custom commission calligraphy — image placeholder">
+              <svg viewBox="0 0 140 120" fill="none" width="80%" opacity="0.7">
+                <path d="M70 10 L130 45 L130 95 L70 110 L10 95 L10 45 Z" stroke="#b8902a" stroke-width="0.4" fill="none"/>
+                <path d="M70 25 L115 52 L115 88 L70 98 L25 88 L25 52 Z" stroke="#b8902a" stroke-width="0.3" fill="none" opacity="0.5"/>
+                <text x="70" y="62" text-anchor="middle" font-family="Amiri,serif" font-size="18" fill="#d4aa45">بسم الله</text>
+                <text x="70" y="80" text-anchor="middle" font-family="Amiri,serif" font-size="10" fill="#c4b89a" opacity="0.7">الرحمن الرحيم</text>
+              </svg>
+            </div>
+          </div>
+          <div class="col-overlay"></div>
+          <div class="col-info">
+            <span class="col-tag">CUSTOM COMMISSIONS</span>
+            <h3 class="col-title">Your Vision, Our Craft</h3>
+            <p class="col-arabic" lang="ar" dir="rtl">كَلَامٌ مِنْ أَعْمَاقِ الْقَلْبِ</p>
+            <a href="#contact" class="col-btn">START YOUR COMMISSION</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===========================================================
+         4. BEST SELLERS / FEATURED PIECES
+         =========================================================== -->
+    <section id="bestsellers" aria-labelledby="bestsellers-title">
+
+      <div class="bestsellers-header reveal">
+        <div>
+          <span class="sec-tag">Featured Pieces</span>
+          <h2 class="sec-title" id="bestsellers-title">
+            Most <span class="g">Beloved</span> Works
+          </h2>
+        </div>
+        <a href="#contact" class="see-all" aria-label="Commission a custom piece">COMMISSION A PIECE →</a>
+      </div>
+
+      <div class="bestsellers-grid">
+
+        <article class="product-card reveal d1">
+          <div class="product-art">
+            <!-- IMAGE: Replace with <img src="images/bismillah.jpg" alt="Bismillah in Thuluth script"> -->
+            <div class="product-art-inner" role="img" aria-label="Bismillah calligraphy in Thuluth script">
+              <svg viewBox="0 0 80 80" fill="none" width="70%" opacity="0.7">
+                <text x="40" y="42" text-anchor="middle" font-family="Amiri,serif" font-size="18" fill="#d4aa45">بسم الله</text>
+              </svg>
+            </div>
+            <div class="product-badge">BESTSELLER</div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Bismillah</h3>
+            <span class="product-arabic" lang="ar" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ · الثُّلث</span>
+            <p class="product-desc">Classic Thuluth script on archival paper. Available in multiple sizes with custom framing options.</p>
+            <div class="product-footer">
+              <span class="product-price">ENQUIRE FOR PRICING</span>
+              <a href="#contact" class="product-view">ORDER NOW</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card reveal d2">
+          <div class="product-art">
+            <!-- IMAGE: Replace with <img src="images/ayat-kursi-naskh.jpg" alt="Ayat ul Kursi in Naskh style"> -->
+            <div class="product-art-inner" role="img" aria-label="Ayat ul Kursi in Naskh style">
+              <svg viewBox="0 0 80 80" fill="none" width="70%" opacity="0.7">
+                <circle cx="40" cy="40" r="28" stroke="#b8902a" stroke-width="0.5"/>
+                <text x="40" y="37" text-anchor="middle" font-family="Amiri,serif" font-size="11" fill="#d4aa45">آيَةُ الْكُرْسِيّ</text>
+                <text x="40" y="52" text-anchor="middle" font-family="Amiri,serif" font-size="9" fill="#c4b89a" opacity="0.7">النسخ</text>
+              </svg>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Ayat ul Kursi</h3>
+            <span class="product-arabic" lang="ar" dir="rtl">آيَةُ الْكُرْسِيّ · النَّسخ</span>
+            <p class="product-desc">The Verse of the Throne in refined Naskh. A timeless piece for any home or masjid setting.</p>
+            <div class="product-footer">
+              <span class="product-price">ENQUIRE FOR PRICING</span>
+              <a href="#contact" class="product-view">ORDER NOW</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card reveal d3">
+          <div class="product-art">
+            <!-- IMAGE: Replace with <img src="images/allah-diwani.jpg" alt="Allah in ornate Diwani script"> -->
+            <div class="product-art-inner" role="img" aria-label="Allah in ornate Diwani script with gold embellishment">
+              <svg viewBox="0 0 80 80" fill="none" width="70%" opacity="0.7">
+                <text x="40" y="50" text-anchor="middle" font-family="Amiri,serif" font-size="32" fill="#d4aa45">الله</text>
+              </svg>
+            </div>
+            <div class="product-badge">POPULAR</div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Allāh — Diwani</h3>
+            <span class="product-arabic" lang="ar" dir="rtl">الله · الخط الديواني</span>
+            <p class="product-desc">The Supreme Name in ornate Diwani script. Available with gold leaf embellishment and gilded framing.</p>
+            <div class="product-footer">
+              <span class="product-price">ENQUIRE FOR PRICING</span>
+              <a href="#contact" class="product-view">ORDER NOW</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card reveal d4">
+          <div class="product-art">
+            <!-- IMAGE: Replace with <img src="images/fatiha-kufic.jpg" alt="Surah Al-Fatiha in Kufic geometric style"> -->
+            <div class="product-art-inner" role="img" aria-label="Surah Al-Fatiha in Kufic geometric style">
+              <svg viewBox="0 0 80 80" fill="none" width="70%" opacity="0.7">
+                <rect x="12" y="12" width="56" height="56" stroke="#b8902a" stroke-width="0.5" fill="none"/>
+                <rect x="20" y="20" width="40" height="40" stroke="#b8902a" stroke-width="0.3" fill="none" transform="rotate(45 40 40)"/>
+                <text x="40" y="44" text-anchor="middle" font-family="Amiri,serif" font-size="10" fill="#d4aa45">الفاتحة</text>
+              </svg>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Al-Fātiḥa</h3>
+            <span class="product-arabic" lang="ar" dir="rtl">سُورَةُ الْفَاتِحَةِ · الكوفي</span>
+            <p class="product-desc">The Opening Surah in geometric Kufic script — bold and architectural for statement walls.</p>
+            <div class="product-footer">
+              <span class="product-price">ENQUIRE FOR PRICING</span>
+              <a href="#contact" class="product-view">ORDER NOW</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Geometric Divider -->
+    <div class="geo-divider" aria-hidden="true"></div>
+
+    <!-- ===========================================================
+         5. CUSTOM FRAMING SECTION
+         =========================================================== -->
+    <section id="framing" aria-labelledby="framing-title">
+      <div class="framing-geo-bg" aria-hidden="true"></div>
+
+      <div class="framing-grid">
+
+        <!-- Visual: Framed piece illustration -->
+        <div class="framing-visual reveal d1">
+          <div class="framing-frame-wrap">
+            <!-- IMAGE: Replace with <img src="images/custom-frame.jpg" alt="Beautifully framed Islamic calligraphy"> -->
+            <div class="framing-frame" role="img" aria-label="Custom framed Islamic calligraphy piece — image placeholder">
+              <div class="framing-frame-inner">
+                <svg viewBox="0 0 100 120" fill="none" width="60%" opacity="0.6">
+                  <text x="50" y="50" text-anchor="middle" font-family="Amiri,serif" font-size="20" fill="#d4aa45">بسم الله</text>
+                  <text x="50" y="70" text-anchor="middle" font-family="Amiri,serif" font-size="12" fill="#c4b89a" opacity="0.7">الرحمن الرحيم</text>
+                </svg>
+              </div>
+              <div class="framing-label" aria-hidden="true">
+                <span>HAND-FINISHED MOULDING</span>
+                <span>UV PROTECTIVE GLASS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Body text -->
+        <div class="framing-body reveal d2">
+          <span class="sec-tag">Bespoke Framing</span>
+          <h2 class="sec-title" id="framing-title">
+            Frames That<br><span class="g">Honour the Script</span>
+          </h2>
+          <div class="gold-sep"></div>
+
+          <p>
+            Our custom framing service is crafted with the same reverence as the calligraphy itself. Each frame is selected or built to complement the artwork without competing with it — a considered border between sacred script and living space.
+          </p>
+          <p>
+            From simple conservation frames to hand-gilded ornate mouldings, we guide every client to the right choice for their piece, their space, and their vision.
+          </p>
+
+          <div class="framing-features">
+            <div class="framing-feat reveal d3">
+              <div class="framing-feat-icon">◈</div>
+              <span class="framing-feat-title">MUSEUM-GRADE GLASS</span>
+              <p>UV-protective, anti-reflective glazing that preserves colour and script clarity for generations to come.</p>
+            </div>
+            <div class="framing-feat reveal d4">
+              <div class="framing-feat-icon">◈</div>
+              <span class="framing-feat-title">HAND-FINISHED MOULDINGS</span>
+              <p>Solid hardwood and gilded frames, hand-finished to complement both traditional and contemporary interiors.</p>
+            </div>
+            <div class="framing-feat reveal d3">
+              <div class="framing-feat-icon">◈</div>
+              <span class="framing-feat-title">ARCHIVAL MOUNTING</span>
+              <p>Acid-free boards and conservation materials that protect your artwork against aging and environmental damage.</p>
+            </div>
+            <div class="framing-feat reveal d4">
+              <div class="framing-feat-icon">◈</div>
+              <span class="framing-feat-title">MADE TO MEASURE</span>
+              <p>Custom sizing for any dimension — from intimate desk pieces to grand feature wall installations.</p>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn-primary">
+            <span>DISCUSS FRAMING OPTIONS</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===========================================================
+         6. WHO WE ARE (Replaces Heritage)
+         =========================================================== -->
+    <section id="who-we-are" aria-labelledby="who-title">
+      <div class="about-geo-bg" aria-hidden="true"></div>
+      <div class="about-arabic-accent" aria-hidden="true" lang="ar">الفن</div>
+
+      <div class="about-grid">
+
+        <!-- Visual column: Calligrapher at work -->
+        <div class="about-visual-col reveal d1">
+          <div class="about-frame-wrap">
+            <div class="about-frame-bg" aria-hidden="true"></div>
+            <!-- IMAGE: Replace .about-frame-main with:
+                 <img src="images/calligrapher-at-work.jpg"
+                      alt="Master calligrapher hand-lettering Arabic script with a traditional reed pen"
+                      style="width:100%;height:100%;object-fit:cover;position:relative;z-index:1;">
+                 Caption: "Handcrafted — every stroke intentional" -->
+            <div class="about-frame-main" role="img" aria-label="Master calligrapher at work, hand-lettering Arabic script — image placeholder">
+              <div class="about-geo-center" aria-hidden="true"></div>
+              <!-- Stylised calligrapher-at-work placeholder illustration -->
+              <div class="calligrapher-scene" aria-hidden="true">
+                <svg viewBox="0 0 180 220" fill="none" xmlns="http://www.w3.org/2000/svg" width="68%" opacity="0.30">
+                  <!-- Head -->
+                  <ellipse cx="90" cy="42" rx="24" ry="26" stroke="#c4b89a" stroke-width="0.8"/>
+                  <!-- Body -->
+                  <path d="M55 80 Q90 68 125 80 L132 185 H48 Z" stroke="#c4b89a" stroke-width="0.8" fill="none"/>
+                  <!-- Arm holding pen -->
+                  <path d="M125 100 L168 128 L160 155 L118 122" stroke="#d4aa45" stroke-width="0.9" fill="none"/>
+                  <!-- Pen tip -->
+                  <line x1="168" y1="128" x2="178" y2="146" stroke="#d4aa45" stroke-width="1.5"/>
+                  <!-- Desk surface -->
+                  <rect x="20" y="185" width="140" height="3" fill="#c4b89a" opacity="0.2"/>
+                  <!-- Paper on desk -->
+                  <rect x="30" y="160" width="100" height="28" stroke="#b8902a" stroke-width="0.5" fill="none" opacity="0.3"/>
+                  <!-- Script lines on paper -->
+                  <line x1="40" y1="170" x2="120" y2="170" stroke="#d4aa45" stroke-width="0.5" opacity="0.4"/>
+                  <line x1="40" y1="176" x2="100" y2="176" stroke="#d4aa45" stroke-width="0.5" opacity="0.3"/>
+                  <!-- Arabic label -->
+                  <text x="90" y="215" text-anchor="middle" font-family="Amiri,serif" font-size="13" fill="#d4aa45" opacity="0.6">الخطّاط</text>
+                </svg>
+              </div>
+              <div class="about-frame-caption" aria-hidden="true">
+                <span>Every stroke by hand</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stats -->
+          <div class="about-stats-row reveal d2">
+            <div class="about-stat">
+              <span class="about-stat-num">15+</span>
+              <span class="about-stat-lbl">YEARS</span>
+            </div>
+            <div class="about-stat">
+              <span class="about-stat-num">500+</span>
+              <span class="about-stat-lbl">PIECES CRAFTED</span>
+            </div>
+            <div class="about-stat">
+              <span class="about-stat-num">100%</span>
+              <span class="about-stat-lbl">HANDMADE</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Text column -->
+        <div class="about-body-col reveal d2">
+          <span class="sec-tag">Who We Are.</span>
+          <h2 class="sec-title" id="who-title">
+            Guardians of<br><span class="g">Sacred Script</span>
+          </h2>
+          <div class="gold-sep"></div>
+
+          <p>
+            Orient Art Gallery was born from a deep reverence for the Arabic language and the living art of Islamic calligraphy. We are a studio of dedicated calligraphers — each trained in the classical traditions of Thuluth, Naskh, Diwani, and Kufic — bringing centuries-old craft into the modern world with full integrity and care.
+          </p>
+          <p>
+            Every piece is created entirely by hand. No digital shortcuts. No printed reproductions. Each stroke is deliberate, each word rendered with the full weight of its meaning. We believe calligraphy is not mere decoration — it is devotion made visible on paper, canvas, and wood.
+          </p>
+          <p>
+            Beyond individual artworks, we provide complete custom framing, nationwide shipping, and personal consultation services for homes, masjids, offices, businesses, and any interior that deserves the quiet power of sacred script on its walls.
+          </p>
+
+          <div class="about-values">
+            <div class="about-val reveal d3">
+              <div class="about-val-icon">✦</div>
+              <span class="about-val-title">SKILLED CALLIGRAPHERS</span>
+              <p>Masters trained in classical Arabic scripts, honouring the tradition of the written word with every piece they produce.</p>
+            </div>
+            <div class="about-val reveal d4">
+              <div class="about-val-icon">✦</div>
+              <span class="about-val-title">NATIONWIDE SHIPPING</span>
+              <p>Every piece is carefully packed and delivered across the country — safely, securely, and with full care.</p>
+            </div>
+            <div class="about-val reveal d3">
+              <div class="about-val-icon">✦</div>
+              <span class="about-val-title">CUSTOM FRAMING</span>
+              <p>Premium framing services tailored to your artwork, your space, and your aesthetic vision from start to finish.</p>
+            </div>
+            <div class="about-val reveal d4">
+              <div class="about-val-icon">✦</div>
+              <span class="about-val-title">PERSONAL CONSULTATION</span>
+              <p>We guide every client from concept through to completion — homes, masjids, offices, businesses, and more.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Geometric Divider -->
+    <div class="geo-divider" aria-hidden="true"></div>
+
+    <!-- ===========================================================
+         7. INSTALLATION SERVICES (New Section)
+         =========================================================== -->
+    <section id="installation" aria-labelledby="installation-title">
+
+      <div class="installation-header reveal">
+        <span class="sec-tag">Professional Installation</span>
+        <h2 class="sec-title" id="installation-title">
+          Placed With<br><span class="g">Care &amp; Precision</span>
+        </h2>
+        <p>
+          Your artwork deserves more than a nail in the wall. Our professional installation team handles every piece with the reverence and skill it deserves — ensuring perfect placement, balanced positioning, and a finish that truly transforms your space.
+        </p>
+      </div>
+
+      <!-- Installation visual grid -->
+      <div class="install-grid">
+
+        <!-- Main panel: Team installing artwork -->
+        <div class="install-item main reveal d1">
+          <div class="install-art">
+            <!-- IMAGE: Replace with <img src="images/installation-team.jpg" alt="Installation team carefully hanging large calligraphy piece"> -->
+            <div class="install-art-scene" role="img" aria-label="Professional installation team carefully positioning calligraphy artwork — image placeholder">
+              <div class="install-wall"></div>
+              <div class="install-artwork">
+                <svg viewBox="0 0 60 80" fill="none" aria-hidden="true">
+                  <text x="30" y="38" text-anchor="middle" font-family="Amiri,serif" font-size="14" fill="#d4aa45" opacity="0.85">بسم الله</text>
+                  <text x="30" y="55" text-anchor="middle" font-family="Amiri,serif" font-size="8.5" fill="#c4b89a" opacity="0.6">الرحمن الرحيم</text>
+                </svg>
+              </div>
+              <!-- Installer figure placeholder -->
+              <div class="install-person" aria-hidden="true">🧑‍🔧</div>
+            </div>
+          </div>
+          <div class="install-overlay"></div>
+          <div class="install-caption">
+            <span>WHITE-GLOVE INSTALLATION</span>
+            <p>Professional placement, every time</p>
+          </div>
+          <div class="install-hover-glow"></div>
+        </div>
+
+        <!-- Residential -->
+        <div class="install-item tall reveal d2">
+          <div class="install-art">
+            <!-- IMAGE: Replace with <img src="images/home-install.jpg" alt="Calligraphy beautifully hung in modern home"> -->
+            <div class="install-art-scene install-scene-home" role="img" aria-label="Calligraphy installed in a home — image placeholder">
+              <div class="install-wall" style="background:linear-gradient(180deg,#f2ece0 0%,#e8dfcf 100%);opacity:0.10;"></div>
+              <div class="install-artwork" style="top:10%;width:44%">
+                <svg viewBox="0 0 60 80" fill="none" aria-hidden="true">
+                  <text x="30" y="45" text-anchor="middle" font-family="Amiri,serif" font-size="20" fill="#d4aa45" opacity="0.85">الله</text>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="install-overlay"></div>
+          <div class="install-caption">
+            <span>RESIDENTIAL</span>
+            <p>Homes &amp; Apartments</p>
+          </div>
+          <div class="install-hover-glow"></div>
+        </div>
+
+        <!-- Masjids -->
+        <div class="install-item tall reveal d3">
+          <div class="install-art">
+            <!-- IMAGE: Replace with <img src="images/masjid-install.jpg" alt="Large calligraphy installed in masjid prayer hall"> -->
+            <div class="install-art-scene install-scene-masjid" role="img" aria-label="Calligraphy installed in masjid — image placeholder">
+              <div class="install-wall" style="background:var(--emerald);opacity:0.06;"></div>
+              <div class="install-artwork" style="top:6%;width:55%">
+                <svg viewBox="0 0 80 60" fill="none" aria-hidden="true">
+                  <text x="40" y="32" text-anchor="middle" font-family="Amiri,serif" font-size="11" fill="#d4aa45" opacity="0.85">اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ</text>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="install-overlay"></div>
+          <div class="install-caption">
+            <span>MASJIDS &amp; ISLAMIC CENTRES</span>
+            <p>Sacred spaces, sacred art</p>
+          </div>
+          <div class="install-hover-glow"></div>
+        </div>
+
+        <!-- Offices & Commercial -->
+        <div class="install-item wide reveal d4">
+          <div class="install-art">
+            <!-- IMAGE: Replace with <img src="images/office-install.jpg" alt="Calligraphy feature wall in modern office reception"> -->
+            <div class="install-art-scene install-scene-office" role="img" aria-label="Calligraphy installed in commercial office — image placeholder">
+              <div class="install-wall" style="background:rgba(200,169,122,0.03);"></div>
+              <div class="install-artwork" style="top:12%;width:32%;left:50%;transform:translateX(-50%)">
+                <svg viewBox="0 0 60 80" fill="none" aria-hidden="true">
+                  <text x="30" y="42" text-anchor="middle" font-family="Amiri,serif" font-size="13" fill="#d4aa45" opacity="0.85">بسم الله</text>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="install-overlay"></div>
+          <div class="install-caption">
+            <span>OFFICES &amp; COMMERCIAL SPACES</span>
+            <p>Businesses, hotels &amp; corporate interiors</p>
+          </div>
+          <div class="install-hover-glow"></div>
+        </div>
+
+      </div>
+
+      <!-- Installation feature cards -->
+      <div class="install-features-row reveal">
+        <div class="install-feat d1">
+          <div class="install-feat-icon">◈</div>
+          <span class="install-feat-title">WHITE-GLOVE HANDLING</span>
+          <p>Every piece is transported and handled with professional care from our studio to your wall — without exception.</p>
+        </div>
+        <div class="install-feat d2">
+          <div class="install-feat-icon">◈</div>
+          <span class="install-feat-title">PRECISE POSITIONING</span>
+          <p>Expert levelling, alignment, and spatial balancing ensures perfect aesthetic placement in any room or setting.</p>
+        </div>
+        <div class="install-feat d3">
+          <div class="install-feat-icon">◈</div>
+          <span class="install-feat-title">ALL SPACE TYPES</span>
+          <p>Homes, masjids, offices, hotels, reception areas, galleries, showrooms, and commercial interiors — all covered.</p>
+        </div>
+        <div class="install-feat d4">
+          <div class="install-feat-icon">◈</div>
+          <span class="install-feat-title">POST-INSTALL WALKTHROUGH</span>
+          <p>We walk through every installation with you to ensure complete satisfaction before we leave your space.</p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Geometric Divider -->
+    <div class="geo-divider" aria-hidden="true"></div>
+
+    <!-- ===========================================================
+         8. CONSULTATION SERVICES
+         =========================================================== -->
+    <section id="consultation" aria-labelledby="consultation-title">
+
+      <div class="consult-header reveal">
+        <span class="sec-tag">Expert Consultation</span>
+        <h2 class="sec-title" id="consultation-title">
+          We Guide You<br><span class="g">From Concept to Wall</span>
+        </h2>
+        <p class="consult-intro-p">
+          Not sure what to order, where to place it, or how large it should be? Our consultation service answers every question — with warmth, genuine expertise, and a deep love for this art form.
+        </p>
+      </div>
+
+      <div class="consult-grid reveal">
+
+        <div class="consult-card d1">
+          <div class="consult-icon" aria-hidden="true">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="0.8">
+              <rect x="3" y="3" width="24" height="24"/>
+              <rect x="7" y="7" width="16" height="16" transform="rotate(45 15 15)"/>
+              <circle cx="15" cy="15" r="3"/>
+            </svg>
+          </div>
+          <h3 class="consult-card-title">Interior Consultation</h3>
+          <p class="consult-card-p">
+            We assess your interior — its style, lighting, wall dimensions, and existing decor — to recommend calligraphy that elevates the room without competing with it.
+          </p>
+          <ul class="consult-list" aria-label="Interior consultation covers">
+            <li>Residential homes &amp; apartments</li>
+            <li>Office &amp; boardroom spaces</li>
+            <li>Masjid &amp; Islamic centre design</li>
+            <li>Hotel lobbies &amp; commercial spaces</li>
+          </ul>
+        </div>
+
+        <div class="consult-card d2">
+          <div class="consult-icon" aria-hidden="true">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="0.8">
+              <circle cx="15" cy="15" r="12"/>
+              <circle cx="15" cy="15" r="6" stroke-dasharray="3 2"/>
+              <line x1="15" y1="3" x2="15" y2="27" opacity="0.4"/>
+              <line x1="3" y1="15" x2="27" y2="15" opacity="0.4"/>
+            </svg>
+          </div>
+          <h3 class="consult-card-title">Artwork Placement</h3>
+          <p class="consult-card-p">
+            The right artwork in the wrong position loses its power. We advise on hanging height, focal point alignment, wall positioning, and lighting for maximum visual impact.
+          </p>
+          <ul class="consult-list" aria-label="Artwork placement covers">
+            <li>Eye-level &amp; focal point analysis</li>
+            <li>Multi-piece wall arrangement</li>
+            <li>Lighting &amp; shadow considerations</li>
+            <li>Entrance &amp; reception positioning</li>
+          </ul>
+        </div>
+
+        <div class="consult-card d3">
+          <div class="consult-icon" aria-hidden="true">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="0.8">
+              <polygon points="15,3 27,27 3,27" fill="none"/>
+              <line x1="15" y1="11" x2="15" y2="21"/>
+              <line x1="10" y1="21" x2="20" y2="21"/>
+            </svg>
+          </div>
+          <h3 class="consult-card-title">Custom Sizing</h3>
+          <p class="consult-card-p">
+            Every wall is unique. We determine the perfect dimensions for your space — whether an intimate A3 desk piece or a monumental feature wall installation spanning metres.
+          </p>
+          <ul class="consult-list" aria-label="Custom sizing covers">
+            <li>Wall dimension measurement</li>
+            <li>Visual balance &amp; proportion</li>
+            <li>Intimate to monumental scale</li>
+            <li>Series &amp; set compositions</li>
+          </ul>
+        </div>
+
+        <div class="consult-card d4">
+          <div class="consult-icon" aria-hidden="true">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="0.8">
+              <path d="M15 3 L27 11 V27 H3 V11 Z" fill="none"/>
+              <path d="M10 27 V19 H20 V27" fill="none"/>
+              <line x1="15" y1="3" x2="15" y2="11" opacity="0.4"/>
+            </svg>
+          </div>
+          <h3 class="consult-card-title">Space &amp; Theme Layout</h3>
+          <p class="consult-card-p">
+            Creating a cohesive Islamic aesthetic across an entire space? We curate scripts, styles, and arrangements that work together — telling a visual story throughout your interior.
+          </p>
+          <ul class="consult-list" aria-label="Space layout covers">
+            <li>Thematic script curation</li>
+            <li>Colour &amp; tone coordination</li>
+            <li>Multi-room layout planning</li>
+            <li>Masjid &amp; event theming</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="consult-cta reveal">
+        <p class="consult-cta-text">Consultations available in person, by phone, or via video call — wherever you are.</p>
+        <a href="#contact" class="btn-primary"><span>BOOK A CONSULTATION</span></a>
+      </div>
+
+    </section>
+
+    <!-- ===========================================================
+         9. TESTIMONIALS
+         =========================================================== -->
+    <section id="testimonials" aria-labelledby="testimonials-title">
+
+      <div class="testimonials-header reveal">
+        <span class="sec-tag">Client Stories</span>
+        <h2 class="sec-title" id="testimonials-title">
+          Words From<br><span class="g">Those We've Served</span>
+        </h2>
+      </div>
+
+      <div class="testimonials-track">
+
+        <article class="testi-card reveal d1">
+          <div class="testi-quote" aria-hidden="true">"</div>
+          <blockquote>
+            <p class="testi-text">
+              From the first consultation to the moment the piece was hung in our home, every step felt personal and considered. The calligrapher understood exactly what we were looking for — and delivered something beyond what we had imagined.
+            </p>
+          </blockquote>
+          <div class="testi-author">
+            <div class="testi-avatar" aria-hidden="true">FA</div>
+            <div>
+              <span class="testi-name">FATIMA A.</span>
+              <span class="testi-loc">Homeowner · Johannesburg</span>
+            </div>
+          </div>
+          <div class="testi-stars" aria-label="Five stars out of five">★★★★★</div>
+        </article>
+
+        <article class="testi-card reveal d2">
+          <div class="testi-quote" aria-hidden="true">"</div>
+          <blockquote>
+            <p class="testi-text">
+              We commissioned a full wall installation of Ayat ul Kursi for our masjid's main prayer hall. The quality, scale, and reverence with which the team approached the work was extraordinary. Our community still speaks of it.
+            </p>
+          </blockquote>
+          <div class="testi-author">
+            <div class="testi-avatar" aria-hidden="true">IM</div>
+            <div>
+              <span class="testi-name">IBRAHIM M.</span>
+              <span class="testi-loc">Masjid Committee Member · Cape Town</span>
+            </div>
+          </div>
+          <div class="testi-stars" aria-label="Five stars out of five">★★★★★</div>
+        </article>
+
+        <article class="testi-card reveal d3">
+          <div class="testi-quote" aria-hidden="true">"</div>
+          <blockquote>
+            <p class="testi-text">
+              We wanted something meaningful for our company reception — not generic wall art. Orient Art Gallery guided us to a Bismillah in Diwani that now anchors the entire space. Professional, warm, and genuinely talented.
+            </p>
+          </blockquote>
+          <div class="testi-author">
+            <div class="testi-avatar" aria-hidden="true">YK</div>
+            <div>
+              <span class="testi-name">YUSUF K.</span>
+              <span class="testi-loc">Business Director · Durban</span>
+            </div>
+          </div>
+          <div class="testi-stars" aria-label="Five stars out of five">★★★★★</div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===========================================================
+         10. ORDER / QUOTE REQUEST (Redesigned — replaces Inquire for Acquisition)
+         =========================================================== -->
+    <section id="contact" aria-labelledby="contact-title">
+
+      <!-- Section header -->
+      <div class="contact-header reveal">
+        <span class="sec-tag">Order &amp; Quote Request</span>
+        <h2 class="sec-title" id="contact-title">
+          Begin Your<br><span class="g">Commission</span>
+        </h2>
+        <p class="contact-header-p">
+          Every order is reviewed personally by our team. Submit your details below and we will respond with a tailored quote within 24–48 hours. No automated replies — ever.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- LEFT: Process + contact info -->
+        <aside class="contact-aside reveal d1" aria-label="Order process and contact information">
+
+          <h3>How It Works</h3>
+          <p>
+            Tell us what you are looking for — we take it from there. Every enquiry is read personally, and every quote is written for you specifically.
+          </p>
+
+          <div class="process-steps" role="list">
+
+            <div class="process-step" role="listitem">
+              <div class="process-num" aria-hidden="true">01</div>
+              <div class="process-text">
+                <strong>Submit Your Enquiry</strong>
+                <span>Tell us what you need — script, size, framing, installation, or consultation.</span>
+              </div>
+            </div>
+
+            <div class="process-step" role="listitem">
+              <div class="process-num" aria-hidden="true">02</div>
+              <div class="process-text">
+                <strong>Personal Review</strong>
+                <span>Every order is reviewed by our team manually. No bots. No automated responses.</span>
+              </div>
+            </div>
+
+            <div class="process-step" role="listitem">
+              <div class="process-num" aria-hidden="true">03</div>
+              <div class="process-text">
+                <strong>Receive Your Quote</strong>
+                <span>We will contact you personally with a detailed quote and production timeline.</span>
+              </div>
+            </div>
+
+            <div class="process-step" role="listitem">
+              <div class="process-num" aria-hidden="true">04</div>
+              <div class="process-text">
+                <strong>Confirmation Email</strong>
+                <span>You will receive an immediate confirmation that your enquiry has been safely received.</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="contact-rows">
+            <div class="contact-row">
+              <div class="ci" aria-label="Email">✉</div>
+              <div>
+                <div class="contact-label">EMAIL</div>
+                <div>hello@orientart.co.za</div>
+              </div>
+            </div>
+            <div class="contact-row">
+              <div class="ci" aria-label="Response time">◉</div>
+              <div>
+                <div class="contact-label">RESPONSE TIME</div>
+                <div>Within 24–48 hours</div>
+              </div>
+            </div>
+            <div class="contact-row">
+              <div class="ci" aria-label="Quote">✦</div>
+              <div>
+                <div class="contact-label">QUOTE</div>
+                <div>Complimentary — no obligation</div>
+              </div>
+            </div>
+          </div>
+
+        </aside>
+
+        <!-- RIGHT: Order form -->
+        <div class="form-panel reveal d2">
+
+          <!-- SUCCESS state (hidden initially) -->
+          <div id="form-success" role="alert" aria-live="polite" aria-atomic="true">
+            <div class="success-ring" aria-hidden="true">✦</div>
+            <h3 class="success-title">Enquiry Received</h3>
+            <p class="success-body">
+              Thank you for reaching out to Orient Art Gallery.<br><br>
+              We have received your request and will respond personally within 24–48 hours.<br><br>
+              A confirmation has been sent to your email address.
+            </p>
+          </div>
+
+          <!-- ERROR state (hidden initially) -->
+          <div id="form-error" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="error-icon" aria-hidden="true">⚠</div>
+            <p class="form-error-msg" id="form-error-msg"></p>
+          </div>
+
+          <!-- FORM -->
+          <div id="form-wrapper">
+            <h3 class="form-panel-title">Request a Quote</h3>
+            <p class="form-panel-sub">All enquiries are reviewed personally. Quotes sent via email.</p>
+
+            <form id="order-form" novalidate aria-label="Order enquiry form">
+
+              <!-- ═══════════════════════════════════════════
+                   HONEYPOT FIELD
+                   Hidden from real users via CSS.
+                   Bots typically fill every visible field automatically.
+                   Backend checks: if this field has any value → silent discard.
+                   The name "website" is a common field bots look for.
+                   ═══════════════════════════════════════════ -->
+              <div class="honeypot-wrapper" aria-hidden="true">
+                <label for="website">Website</label>
+                <input
+                  type="text"
+                  id="website"
+                  name="website"
+                  autocomplete="off"
+                  tabindex="-1"
+                  aria-hidden="true"
+                  placeholder="Leave this empty">
+              </div>
+
+              <!-- Row: Name + Phone -->
+              <div class="f-row">
+                <div class="f-group">
+                  <label for="name">Full Name <span class="f-required" aria-label="required">*</span></label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Your full name"
+                    autocomplete="name"
+                    required
+                    aria-required="true"
+                    aria-describedby="name-error">
+                  <span class="f-error" id="name-error" role="alert"></span>
+                </div>
+                <div class="f-group">
+                  <label for="phone">Phone Number</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="+27 or local format"
+                    autocomplete="tel"
+                    aria-describedby="phone-hint">
+                  <span class="f-hint" id="phone-hint">Optional but recommended</span>
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="f-group">
+                <label for="email">Email Address <span class="f-required" aria-label="required">*</span></label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="your@email.com"
+                  autocomplete="email"
+                  required
+                  aria-required="true"
+                  aria-describedby="email-error">
+                <span class="f-error" id="email-error" role="alert"></span>
+              </div>
+
+              <!-- Service Type -->
+              <div class="f-group">
+                <label for="service">Service Required <span class="f-required" aria-label="required">*</span></label>
+                <select
+                  id="service"
+                  name="service"
+                  required
+                  aria-required="true"
+                  aria-describedby="service-error">
+                  <option value="" disabled selected>Select a service…</option>
+                  <option value="original-piece">Original Calligraphy Piece</option>
+                  <option value="custom-commission">Custom Commission</option>
+                  <option value="custom-framing">Custom Framing Only</option>
+                  <option value="installation">Professional Installation</option>
+                  <option value="consultation">Interior Consultation</option>
+                  <option value="full-package">Full Package (Art + Framing + Installation)</option>
+                  <option value="other">Other / Not Sure Yet</option>
+                </select>
+                <span class="f-error" id="service-error" role="alert"></span>
+              </div>
+
+              <!-- Message / Order Details -->
+              <div class="f-group">
+                <label for="message">Order Details <span class="f-required" aria-label="required">*</span></label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Describe your vision — the text you'd like calligraphed, preferred script style, dimensions, framing preference, room type, intended use, or anything else that would help us understand your order…"
+                  required
+                  aria-required="true"
+                  aria-describedby="message-error"></textarea>
+                <span class="f-error" id="message-error" role="alert"></span>
+              </div>
+
+              <!-- Optional File Upload -->
+              <div class="f-group f-upload-group">
+                <label for="attachment">Reference Image (Optional)</label>
+                <div class="f-upload-area" id="upload-area" role="button" tabindex="0" aria-label="Click to upload a reference image or document">
+                  <input
+                    type="file"
+                    id="attachment"
+                    name="attachment"
+                    accept="image/*,.pdf"
+                    aria-describedby="upload-hint">
+                  <div class="upload-inner" aria-hidden="true">
+                    <span class="upload-icon">↑</span>
+                    <span class="upload-text">Drop file here or click to browse</span>
+                    <span class="upload-hint" id="upload-hint">JPG, PNG or PDF — max 5 MB</span>
+                  </div>
+                  <div class="upload-chosen" id="upload-chosen" aria-live="polite"></div>
+                </div>
+                <span class="f-note">A reference image helps us understand your vision better.</span>
+              </div>
+
+              <!-- Submit button -->
+              <button
+                type="submit"
+                class="btn-send"
+                id="submit-btn"
+                aria-describedby="submit-note">
+
+                <span id="btn-text">SEND ENQUIRY</span>
+
+                <span id="btn-loading" class="btn-loading-inner" aria-hidden="true" hidden>
+                  <span class="loading-dot"></span>
+                  <span class="loading-dot"></span>
+                  <span class="loading-dot"></span>
+                </span>
+
+              </button>
+
+              <p class="submit-note" id="submit-note">
+                By submitting this form, you confirm that your enquiry will be reviewed personally by our team. Your information is kept private and used solely to process your order.
+              </p>
+
+            </form>
+          </div><!-- /form-wrapper -->
+
+        </div><!-- /form-panel -->
+
+      </div><!-- /contact-grid -->
+    </section>
+
+  </main><!-- /main -->
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer role="contentinfo">
+    <div class="footer-grid">
+
+      <!-- Brand column -->
+      <div class="footer-brand">
+        <div class="footer-brand-logo">
+          <div class="nav-logo-text">
+            <span class="nav-logo-main">ORIENT ART GALLERY</span>
+            <span class="nav-logo-arabic" lang="ar" dir="rtl">الفن الشرقي</span>
+          </div>
+        </div>
+        <p>
+          Handcrafted Islamic calligraphy, bespoke framing, and professional installation. Bringing sacred Arabic script into homes, masjids, offices, and spaces across the country — one piece at a time.
+        </p>
+        <span class="footer-arabic" lang="ar" dir="rtl">وَمَا تَوْفِيقِي إِلَّا بِاللَّهِ</span>
+        <div class="social-row">
+          <a href="#" class="soc" aria-label="Follow us on Instagram">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1.3" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="#" class="soc" aria-label="Follow us on Facebook">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="#" class="soc" aria-label="Contact us on WhatsApp">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <nav class="fc" aria-label="Footer navigation">
+        <h4>NAVIGATION</h4>
+        <ul>
+          <li><a href="#collections">Collections</a></li>
+          <li><a href="#bestsellers">Featured Pieces</a></li>
+          <li><a href="#framing">Custom Framing</a></li>
+          <li><a href="#installation">Installation</a></li>
+          <li><a href="#who-we-are">Who We Are.</a></li>
+          <li><a href="#consultation">Consultation</a></li>
+        </ul>
+      </nav>
+
+      <!-- Services -->
+      <nav class="fc" aria-label="Footer services">
+        <h4>SERVICES</h4>
+        <ul>
+          <li><a href="#contact">Original Pieces</a></li>
+          <li><a href="#contact">Custom Commissions</a></li>
+          <li><a href="#framing">Custom Framing</a></li>
+          <li><a href="#installation">Professional Installation</a></li>
+          <li><a href="#consultation">Interior Consultation</a></li>
+          <li><a href="#contact">Nationwide Shipping</a></li>
+        </ul>
+      </nav>
+
+      <!-- Contact -->
+      <div class="fc">
+        <h4>GET IN TOUCH</h4>
+        <ul>
+          <li><a href="#contact">Request a Quote</a></li>
+          <li><a href="mailto:hello@orientart.co.za">hello@orientart.co.za</a></li>
+          <li><a href="#consultation">Book a Consultation</a></li>
+        </ul>
+        <div class="footer-response">
+          <div class="footer-response-label">RESPONSE TIME</div>
+          <div class="footer-response-val">Within 24–48 hours</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>
+        © <span id="year"></span> <span class="g">Orient Art Gallery</span>.
+        All rights reserved. Handcrafted with devotion.
+      </p>
+      <span class="footer-bottom-arabic" lang="ar" dir="rtl">بِسْمِ اللَّهِ الرَّحْمٰنِ الرَّحِيمِ</span>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       SCRIPTS
+       ============================================================ -->
+  <script src="script.js" defer></script>
+
+</body>
+</html>
